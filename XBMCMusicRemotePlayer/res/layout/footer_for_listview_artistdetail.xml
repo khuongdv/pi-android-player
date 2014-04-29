@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+ 	    android:layout_width="match_parent"
+ 	    android:gravity="center_horizontal"
+ 	    android:padding="3dp"
+ 	    android:layout_height="match_parent" >
+    <Button 
+        android:id="@+id/button_load_more_artistdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Load more..."
+        />
+
+</RelativeLayout>

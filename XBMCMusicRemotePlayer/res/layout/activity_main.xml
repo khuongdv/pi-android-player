@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    >
+    <fragment
+        
+        android:id="@+id/fragment_container_allsong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="edu.ptit.xbmc.fragments.FragmentAllSong"
+        />
+    
+    <fragment
+        android:id="@+id/fragment_container_album_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="edu.ptit.xbmc.fragments.FragmentAlbumList"
+        />
+    <fragment
+        android:id="@+id/fragment_container_albumdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="edu.ptit.xbmc.fragments.FragmentAlbumDetail"
+        />
+    <fragment
+        android:id="@+id/fragment_container_artist_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="edu.ptit.xbmc.fragments.FragmentArtistList"
+        />
+   <fragment
+        android:id="@+id/fragment_container_artist_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="edu.ptit.xbmc.fragments.FragmentArtistDetail"
+        />
+    <fragment
+        android:id="@+id/fragment_container_nowplaying"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="edu.ptit.xbmc.fragments.FragmentNowPlaying"
+       />
+    <fragment
+        android:id="@+id/fragment_container_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="edu.ptit.xbmc.fragments.FragmentSettings"
+      />
+   <fragment
+        android:id="@+id/fragment_container_direct_remote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="edu.ptit.xbmc.fragments.FragmentDirectRemote"
+        />
+</LinearLayout>

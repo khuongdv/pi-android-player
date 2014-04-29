@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+ 
+    <!--  ListRow Left side Thumbnail image -->
+    <LinearLayout android:id="@+id/albumArtLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginRight="5dip">
+ 
+        <ImageView
+            android:id="@+id/albumArtInArtistList"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:src="@drawable/album_thumb"/>
+    </LinearLayout>
+ 
+    <!-- Title Of Song-->
+
+    <TextView
+        android:id="@+id/txtArtistNameInArtistList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/albumArtLayout"
+        android:layout_toRightOf="@+id/albumArtLayout"
+        android:maxLines="4"
+        android:text="Yeu lai tu dau"
+        android:textColor="@color/TEXT_COLOR"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+ 
+    <!-- Artist Name -->
+
+    <TextView
+        android:id="@+id/descriptionOfArtistInartistList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtArtistNameInArtistList"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/albumArtLayout"
+        android:text="Artist"
+        android:textStyle="italic"
+        android:textColor="@color/Black"
+        android:textSize="13dip" />
+ 	<TextView
+        android:id="@+id/txtDescriptionOfAlbum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionOfArtistInartistList"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/albumArtLayout"
+        android:text="Description"
+        android:textColor="@color/Black"
+        android:textSize="10dip" />
+    <!-- Rightend Duration -->
+ 
+     <!-- Rightend Arrow -->
+     <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+     <TextView
+         android:id="@+id/txtArtistIDInartistList"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/albumArtLayout"
+         android:layout_alignLeft="@+id/txtDescriptionOfAlbum"
+         android:gravity="right"
+         android:text="2005"
+         android:textColor="@color/TEXT_COLOR"
+         android:textSize="10dip"
+         android:textStyle="bold" />
+ 
+</RelativeLayout>

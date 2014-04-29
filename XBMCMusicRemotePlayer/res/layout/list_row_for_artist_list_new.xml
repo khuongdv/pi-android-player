@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+ 
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/albumArtLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginRight="5dip">
+ 
+        <ImageView
+            android:id="@+id/albumArtInArtistList"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:src="@drawable/default_artist_thumb" />
+ 
+    </LinearLayout>
+ 
+    <!-- Title Of Song-->
+
+    <TextView
+        android:id="@+id/artistNameInArtistList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/albumArtLayout"
+        android:layout_toRightOf="@+id/albumArtLayout"
+        android:text="Yeu lai tu dau"
+        android:textColor="@color/TEXT_COLOR"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        
+        android:maxLines="4"
+        android:typeface="sans" />
+ 
+    <!-- Artist Name -->
+
+    <TextView
+        android:id="@+id/descriptionOfArtistInartistList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artistNameInArtistList"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/albumArtLayout"
+        android:text="Artist"
+        android:textStyle="italic"
+        android:textColor="@color/Black"
+        android:textSize="13dip" />
+    <!-- Rightend Duration -->
+ 
+     <!-- Rightend Arrow -->
+     <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+ 
+</RelativeLayout>
